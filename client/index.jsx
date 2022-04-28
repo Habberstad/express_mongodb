@@ -13,11 +13,11 @@ function Frontpage() {
 }
 
 function ListMovies() {
-    return null;
+    return <h1>List movies</h1>;
 }
 
 function AddNewMovie() {
-    return null;
+    return <h1>Add new movie</h1>;
 }
 
 function Application() {

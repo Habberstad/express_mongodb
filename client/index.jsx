@@ -17,7 +17,12 @@ function ListMovies() {
 }
 
 function AddNewMovie() {
-    return <h1>Add new movie</h1>;
+    return (<div>
+        <h1>Add new movie</h1>
+        <form action="">
+            <input type="text"/><input type="text"/>
+        </form>
+    </div>)
 }
 
 function Application() {

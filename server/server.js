@@ -12,8 +12,10 @@ const mongoClient = new MongoClient(process.env.MONGODB_URL);
 mongoClient.connect().then(async () => {
   console.log("Connected to mongodb");
   const databases = await mongoClient.db().admin().listDatabases();
-  console.log(databases);
-  app.use("/api/movies", MoviesApi(mongoClient.db("movies-database")));
+  app.use(
+    "/api/movies",
+    MoviesApi(mongoClient.db(process.env.MONGODB_DATABASE || "movies-database"))
+  );
 });
 
 app.use(express.static("../client/dist"));

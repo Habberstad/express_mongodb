@@ -21,7 +21,7 @@ export function ListMovies({ listMovies }) {
     return (
       <div>
         <h1>Error</h1>
-        <div id="error-text">{error.toString()}</div>
+        <div>{error.toString()}</div>
       </div>
     );
   }

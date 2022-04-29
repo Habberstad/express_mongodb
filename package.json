@@ -1,36 +1,27 @@
 {
   "name": "lecture_07_mongodb_repeat",
   "version": "1.0.0",
-  "description": "MongoDB with React and Express\r ==============================",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "npm run test:client && npm run test:server",
     "test:client": "cd client && npm test",
     "test:server": "cd server && npm test",
-    "build": "npm run build:server && npm run build:client",
-    "build:client": "cd client && npm run build",
-    "build:server": "cd server && npm run build",
     "dev": "concurrently npm:dev:client npm:dev:server",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
-    "start": "cd server && npm start",
-    "postinstall": "npm run install:client && npm run install:server",
-    "install:client": "cd client && npm install --include=dev",
-    "install:server": "cd server && npm install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kristiania-pg6301-2022/pg6301-react-and-express-lectures.git"
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "start": "cd server && npm start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kristiania-pg6301-2022/pg6301-react-and-express-lectures/issues"
-  },
-  "homepage": "https://github.com/kristiania-pg6301-2022/pg6301-react-and-express-lectures#readme",
   "devDependencies": {
-    "concurrently": "^7.0.0",
-    "prettier": "^2.5.1"
+    "concurrently": "^7.1.0"
+  },
+  "dependencies": {
+    "prettier": "^2.6.2"
   }
 }

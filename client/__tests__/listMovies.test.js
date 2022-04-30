@@ -15,7 +15,7 @@ describe("ListMovies component", function () {
     const movies = [{ title: "movie 1" }, { title: "movie 2" }];
     const domElement = document.createElement("div");
 
-    await act(() => {
+    await act(async () => {
       ReactDOM.render(<ListMovies listMovies={() => movies} />, domElement);
     });
 
@@ -27,7 +27,7 @@ describe("ListMovies component", function () {
 
   it("shows error message", async function () {
     const domElement = document.createElement("div");
-    await act(() => {
+    await act(async () => {
       ReactDOM.render(
         <ListMovies
           listMovies={() => {

@@ -17,7 +17,7 @@ beforeAll(async () => {
   await database.collection("movies").deleteMany({});
   app.use("/api/movies", MoviesApi(database));
 });
-afterAll(async () => {
+afterAll(() => {
   mongoClient.close();
 });
 

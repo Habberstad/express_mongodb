@@ -31,7 +31,6 @@ describe("movies api", () => {
         year: 2020,
       })
       .expect(200);
-
     expect(
       (await request(app).get("/api/movies").expect(200)).body.map(
         ({ title }) => title
